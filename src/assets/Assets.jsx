@@ -11,6 +11,8 @@ import exchange_icon from './exchange_icon.png';
 import quality_icon from './quality_icon.png';
 import customer_icon from './customer_icon.png';
 import arrow_down from './arrow_down.png';
+import search_icon from './search_icon.png';
+import cross_icon from './cross_icon.png';
 
 
 // exported these images through object...
@@ -28,6 +30,8 @@ export const Assets= {
     quality_icon,
     customer_icon,
     arrow_down,
+    search_icon,
+    cross_icon,
 }
 
 export const products =[

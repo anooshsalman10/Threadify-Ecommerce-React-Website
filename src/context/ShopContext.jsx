@@ -11,7 +11,7 @@ const ShopContextProvider = (props) => {
 
     // to implement 'search' feature create following state variables
     const [search, setSearch]= useState('');
-    const [showSearch,setShowSearch]=useState(true);
+    const [showSearch,setShowSearch]=useState(false);
 
 
     // now pass search, showSearch variables etc here so that these can be accessed anywhere

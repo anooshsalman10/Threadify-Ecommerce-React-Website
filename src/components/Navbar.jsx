@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom';
 import { Assets } from '../assets/Assets.jsx';
 import { Search, ShoppingCart, User, Menu, CircleChevronLeft } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ShopContext } from '../context/ShopContext.jsx';
 
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const {setShowSearch} = useContext(ShopContext);
+
   return (
     <nav className='flex items-center justify-between font-medium py-2 px-8 shadow-sm'>
 
@@ -74,8 +77,8 @@ const Navbar = () => {
 
       <div className='flex items-center gap-6'>
 
-        <NavLink to="/">
-          < Search size={22} />
+        <NavLink to="/collection">
+          < Search size={22} onClick={()=>setShowSearch(true)}/>
         </NavLink>
 
         <NavLink to='/cart' className='relative'>
