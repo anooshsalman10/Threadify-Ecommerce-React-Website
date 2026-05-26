@@ -13,6 +13,7 @@ import customer_icon from './customer_icon.png';
 import arrow_down from './arrow_down.png';
 import search_icon from './search_icon.png';
 import cross_icon from './cross_icon.png';
+import star_icon from './star_icon.png';
 
 
 // exported these images through object...
@@ -32,6 +33,7 @@ export const Assets= {
     arrow_down,
     search_icon,
     cross_icon,
+    star_icon,
 }
 
 export const products =[
