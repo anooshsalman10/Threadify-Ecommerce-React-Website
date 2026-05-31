@@ -16,6 +16,7 @@ import Orders from './pages/Orders.jsx'
 import Contact from './pages/Contact.jsx'
 import Collection from './pages/Collection.jsx'
 import ShopContextProvider from './context/ShopContext.jsx'
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const router=createBrowserRouter([

@@ -9,7 +9,7 @@ import { ShopContext } from '../context/ShopContext.jsx';
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
-  const {setShowSearch} = useContext(ShopContext);
+  const {setShowSearch,getCartCount} = useContext(ShopContext);
 
   return (
     <nav className='flex items-center justify-between font-medium py-2 px-8 shadow-sm'>
@@ -83,7 +83,7 @@ const Navbar = () => {
 
         <NavLink to='/cart' className='relative'>
           <ShoppingCart size={22} />
-          <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px] '>10</p>
+          <p className='absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px] '>{getCartCount()}</p>
         </NavLink>
 
 
