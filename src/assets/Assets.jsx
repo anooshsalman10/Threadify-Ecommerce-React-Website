@@ -15,7 +15,10 @@ import search_icon from './search_icon.png';
 import cross_icon from './cross_icon.png';
 import star_icon from './star_icon.png';
 import bin_icon from './bin_icon.png';
-
+import razorpay_logo from './razorpay_logo.svg';
+import stripe_logo from './stripe_logo.svg';
+import about_img from './about_img.jpg';
+import contact_img from './contact_img.jpg';
 
 // exported these images through object...
 export const Assets= {
@@ -36,6 +39,10 @@ export const Assets= {
     cross_icon,
     star_icon,
     bin_icon,
+    razorpay_logo,
+    stripe_logo,
+    about_img,
+    contact_img,
 }
 
 export const products =[
